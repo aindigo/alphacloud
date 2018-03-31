@@ -1,4 +1,4 @@
-FROM debian:stable 
+FROM debian:stable-slim
 
 RUN echo "deb http://ftp.ca.debian.org/debian unstable main" >> /etc/apt/sources.list
 
