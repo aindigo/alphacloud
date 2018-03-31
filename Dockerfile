@@ -61,5 +61,8 @@ RUN cmake .. \
     -DCMAKE_INSTALL_PREFIX=/usr
 RUN make install
 
+RUN rm -rf /deps
+RUN echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
+
 WORKDIR /z
 
